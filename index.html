@@ -3,9 +3,364 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap</title>
+    <title>All recipes</title>
+    <link rel="icon" href="./public/fav__icon.jpg" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+        <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./assets/icons/AllRecipes-Logo.svg.png"
+              alt="logo"
+              width="100"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mobile app</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dinners
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">5-Ingridients dinners</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Quick and easy</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Main dishes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Meals
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Breakfast</a></li>
+                  <li><a class="dropdown-item" href="#">Dinner</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Drinks</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Ingridients
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Chicken</a></li>
+                  <li><a class="dropdown-item" href="#">Beef</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Fruits</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Occasions
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Ramadan</a></li>
+                  <li><a class="dropdown-item" href="#">Nowruz</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Birthday</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Cusines
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Uzbek</a></li>
+                  <li><a class="dropdown-item" href="#">Mexican</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">indian</a></li>
+                </ul>
+              </li> -->
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Kitchen tips
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">BBQ</a></li>
+                  <li><a class="dropdown-item" href="#">Instant Pot</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Reviews</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  News
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Recalls</a></li>
+                  <li><a class="dropdown-item" href="#">We tried it</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Trends</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Features
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dinner Fix</a></li>
+                  <li><a class="dropdown-item" href="#">Sweet Spot</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">In the Kitchen</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">AllStrars</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">How to add a recipe</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Our history</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Find a recipe"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </header>
+    <main>
+    <section id="intro" class="pt-5">
+        <div class="container">
+        <div class="row">
+            <div class="col-xl-9 col-lg-12 pb-lg-3">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/images/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.avif" class="d-block w-100" alt="..." height="590">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Our Most-Saved Eid Day Recipe Last Year</h5>
+                          <p class="">The beauty of this traditional dish lies in its simplicity and harmonious blend of ingredients. .</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/3562641-Stupid-Simple-Roast-Chicken-Photo-by-Allrecipes-Magazine-resized-1-752cb17d8ac44843b159ddc0923108dc.jpg" class="d-block w-100" alt="..." height="590">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Persian Recipes</h5>
+                          <p>earn to make tahdig, the famous, fluffy Persian rice, and how to use pomegranate molasses and lots of fresh herbs to create traditional Persian dishes.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/food.webp" class="d-block w-100" alt="..." height="590">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Ramadan Recipes</h5>
+                          <p>Break the Ramadan fast with these filling dishes from all over the world. Find traditional suhor and iftar recipes, as well as recipes for your Eid al-Fitr feast.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden primary">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="col-xl-3 col-lg-12">
+                <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Roscoe’s Instant Pot Pasta Takeover</h5>
+      <small>Today</small>
+    </div>
+    <p class="mb-1">Professional Chef Turns a 2-Star Instant Pot Pasta Into a Restaurant-Level Meal</p>
+    <small>It's creamy, classic, and fit for a crowd.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">The 14 Recipes We Can't Wait to Make This March</h5>
+      <small class="text-body-secondary">1 day ago</small>
+    </div>
+    <p class="mb-1">When we start to notice daffodils poking through the ground and we spy Daylight Savings on the calendar, we know spring is on the horizon.</p>
+    <small class="text-body-secondary">Spring forward into these dishes.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Grandpa’s Best Carrot Cake Has an Unexpected Secret Ingredient</h5>
+      <small class="text-body-secondary">3 days ago</small>
+    </div>
+    <p class="mb-1"> Luckily, we’ve discovered a trick to achieve this baking feat every time, and it starts and ends with one simple ingredient.</p>
+    <small class="text-body-secondary">It’s what makes this 5-star recipe “famous.”</small>
+  </a>
+</div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="middle" class="pt-5">
+        <div class="container">
+            <div class="card-group gap-5">
+                <div class="card">
+                  <img src="./assets/images/gallery1.jpg" class="card-img-top" alt="..." height="400">
+                  <div class="card-body">
+                    <h5 class="card-title">Quick and Easy Healthy Breakfast Ideas</h5>
+                    <p class="card-text">Create a delicious everyday breakfast or pull together an amazing brunch with top-rated recipes for pancakes and waffles, eggs, brunch casseroles, coffee cakes, muffins, quiche, and so much more.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./assets/images/gallery2.jpg" class="card-img-top" alt="..." height="400">
+                  <div class="card-body">
+                    <h5 class="card-title">It's Lunchtime</h5>
+                    <p class="card-text">Bring on the classics, like a tuna salad or grilled cheese sandwich, or make a delicious soup or salad. Browse 1170+ lunch recipes and find a new favorite.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 1 days ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./assets/images/gallery3.jpg" class="card-img-top" alt="..." height="400">
+                  <div class="card-body">
+                    <h5 class="card-title">Pasta and Noodles</h5>
+                    <p class="card-text">Find recipes for all your favorite pasta dishes including lasagna, baked ziti, pasta salad, macaroni and cheese, and pesto.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 days ago</small></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+    </section>
+    <section #videos class="pt-5">
+        <div class="container">
+            <h1>From inspiration to celebration: Allrecipes helps cooks succeed in every step of their cooking journey.</h1>
+            <p>Allrecipes is the world’s #1 digital food brand. We are on a mission to help cooks of all interests and skill sets discover, and share in, the thrill of home cooking.</p>
+                      
+            <div class="row">
+              <div class="col-3">
+            <h4>Pro Chef Fixes An Instant Pot® Pasta Bolognese | Recipe Redemption | Allrecipes</h4>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kjSnMXH719o"></iframe>
+                </div>
+              </div>
+              <div class="col-3">
+                <h4>Pro Chef Transforms Soggy French Toast Into Restaurant Quality | Recipe Redemption | Allrecipes</h4>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YCKY8glxohw"></iframe>
+                    </div>
+                  </div>
+                  
+                  <div class="col-3">
+                    <h4>How to Make Delicious Homemade Salisbury Steak | You Can Cook That | Allrecipes.com</h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/g3tdZUPWwpk"></iframe>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <h4>13 Quick & Easy Breakfast Ideas With Minimal Ingredients | Perfect Everyday Recipes!</h4>
+                            <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BPghFJNwAUs"></iframe>
+                            </div>
+                          </div>
+            
+            </div>
+          </div>
+
+        
+
+    </section>
+</main>
+  </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
